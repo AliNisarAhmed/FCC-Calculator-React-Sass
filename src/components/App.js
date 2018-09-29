@@ -4,6 +4,7 @@ import Screen from './Screen';
 import ButtonsList from './ButtonsList';
 
 import appendDigitToNumber from './helperFunctions/appendDigitToNumber';
+import { performDivision } from './helperFunctions/performOperations';
 
 class App extends React.Component {
 
@@ -28,7 +29,7 @@ class App extends React.Component {
           />
         <ButtonsList 
           handleClick={this.handleClick}
-          
+          calcResult={this.calcResult}
         />
       </div>
     );
@@ -56,8 +57,8 @@ class App extends React.Component {
     });
   }
 
-  calcResult () {
-
+  calcResult (value) {
+    let result = performDivision(this.state.expression);
   }
 }
 

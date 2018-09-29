@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from './Button';
 
-const ButtonsList = ({ handleClick }) => {
+const ButtonsList = ({ handleClick, calcResult }) => {
   return (
     <div className="buttonsList">
       <Button handleClick={handleClick} value="AC">clear</Button>
@@ -19,7 +19,7 @@ const ButtonsList = ({ handleClick }) => {
       <Button handleClick={handleClick} value={7}>seven</Button>
       <Button handleClick={handleClick} value={8}>eight</Button>
       <Button handleClick={handleClick} value={9}>nine</Button>
-      <Button handleClick={handleClick} value="=">equals</Button>
+      <Button handleClick={calcResult} value="=">equals</Button>
       <Button handleClick={handleClick} value={0}>zero</Button>
       <Button handleClick={handleClick} value=".">decimal</Button>
     </div>
