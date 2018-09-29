@@ -1,0 +1,23 @@
+.btn {
+  min-width: $btn_width;
+  font-size: $btn_font;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $color_hover;
+  }
+
+  &:active {
+    background-color: darken($color: $color-hover, $amount: 10%);
+  }
+
+  
+}

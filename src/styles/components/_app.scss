@@ -1,0 +1,10 @@
+.app {
+  width: min-content;
+  // min-width: 300px;
+  height: $calc_height;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  background-color: #ddd;
+}
