@@ -3,11 +3,11 @@ import Expression from './Expression';
 import Result from './Result';
 
 
-const Screen = ({ expression }) => {
+const Screen = ({ expression, display }) => {
   return (
     <div className="screen">
       <Expression expression={expression}/>
-      <Result />
+      <Result display={display}/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .app {
-  width: min-content;
+  flex-basis: content;
   // min-width: 300px;
   height: $calc_height;
   margin: 50px auto;

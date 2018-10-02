@@ -7,11 +7,26 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
+  "jest": {
+    "setupFiles": [
+      "./tests/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "dependencies": {
-    "react": "16.2.0",
-    "react-dom": "16.2.0"
+    "enzyme": "3.6.0",
+    "enzyme-adapter-react-16": "1.5.0",
+    "enzyme-to-json": "3.3.4",
+    "jest": "23.6.0",
+    "react": "16.5.2",
+    "react-dom": "16.5.2"
   },
   "devDependencies": {
+    "@types/enzyme": "3.1.14",
+    "@types/enzyme-adapter-react-16": "1.0.3",
+    "@types/jest": "23.3.2",
     "@types/react": "16.4.14",
     "@types/react-dom": "16.0.8",
     "parcel-bundler": "^1.6.1"

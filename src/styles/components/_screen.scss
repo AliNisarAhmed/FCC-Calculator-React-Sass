@@ -6,6 +6,7 @@
 
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: minmax(min-content, 1fr);
   grid-template-areas: 
     "expression"
     "result"

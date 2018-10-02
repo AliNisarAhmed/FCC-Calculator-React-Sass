@@ -16,3 +16,9 @@ import "./styles/styles.scss";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+
+
+// TODO
+
+  // ** clicking "." while a result is being displayed (after clicking "=") results in error
+  // ** add simultaneous calculation for x/ and +-, "first come first serve"

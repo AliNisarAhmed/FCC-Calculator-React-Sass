@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'; 
 
 const Button = ({ value, children, handleClick }) => {
+  
   return (
     <button 
       className="btn" 

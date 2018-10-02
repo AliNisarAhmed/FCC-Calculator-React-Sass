@@ -2,10 +2,10 @@ import React from 'react';
 
 import Button from './Button';
 
-const ButtonsList = ({ handleClick, calcResult }) => {
+const ButtonsList = ({ handleClick, calcResult, clearAll }) => {
   return (
     <div className="buttonsList">
-      <Button handleClick={handleClick} value="AC">clear</Button>
+      <Button handleClick={clearAll} value="AC">clear</Button>
       <Button handleClick={handleClick} value="/">divide</Button>
       <Button handleClick={handleClick} value="x">multiply</Button>      
       <Button handleClick={handleClick} value={1}>one</Button>

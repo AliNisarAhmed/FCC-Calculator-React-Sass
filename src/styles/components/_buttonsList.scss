@@ -2,7 +2,7 @@
   height: $body_height;
   border: 1px solid goldenrod;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 2px;
 }

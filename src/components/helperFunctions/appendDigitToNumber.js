@@ -1,5 +1,7 @@
 const appendDigitToNumber = (arr, value) => {
+  
   arr[arr.length - 1] = parseInt(arr[arr.length - 1].toString() + value.toString(), 10);
+
   return arr;
 }
 
