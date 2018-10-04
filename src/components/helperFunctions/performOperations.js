@@ -1,6 +1,9 @@
 export default (arr, operator) => {  // let arr = [1, "+", 4, "/", 2];  (answer should be [1, "+", 2])
 
   let temp = arr.slice();
+  if (typeof temp[0] !== "number") {  // to eliminate the first element if it is an operator, signed digits not supported yet
+    temp.shift();
+  }
 
   if (operator === "multiplyAndDivide") {
     while(temp.includes("/") || temp.includes("x")) {
@@ -11,6 +14,7 @@ export default (arr, operator) => {  // let arr = [1, "+", 4, "/", 2];  (answer 
       temp.splice(i - 1, 3, result);
     }
   } else {
+
     while (temp.includes("+") || temp.includes("-")) {
       let i = temp.findIndex(elem => elem === "+" || elem === "-");
       let left = temp[i - 1];

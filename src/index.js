@@ -20,5 +20,9 @@ ReactDOM.render(<App />, rootElement);
 
 // TODO
 
-  // ** clicking "." while a result is being displayed (after clicking "=") results in error
-  // ** add simultaneous calculation for x/ and +-, "first come first serve"
+  // Add Keyboard functionality  **DONE
+  // Dot functionality to be seperated, and check for some weird bug when entering "." on an answer
+  // when expression is very long, it should wrap to new line, and keep doing so.
+  // When an operator is clicked first, and then an expression is entered, results in a crash.  ** DONE
+  // crashed when "=" is pressed at start
+  // support for -ve numbers at the beginning of an expression to be added.
